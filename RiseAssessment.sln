@@ -5,11 +5,17 @@ VisualStudioVersion = 16.0.32106.194
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{731C5899-9FAA-4BF3-AFCE-CF15FFA1EC10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiseAssesment.Infrastructure", "RiseAssesment.Infrastructure\RiseAssesment.Infrastructure.csproj", "{0EFFCA73-A70F-4791-B2F3-637C21E02305}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RiseAssesment.Infrastructure", "RiseAssesment.Infrastructure\RiseAssesment.Infrastructure.csproj", "{0EFFCA73-A70F-4791-B2F3-637C21E02305}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiseAssessment.Manager", "RiseAssessment.Manager\RiseAssessment.Manager.csproj", "{F32FD8D2-C32E-4F9E-A4B4-D235710FA697}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RiseAssessment.Manager", "RiseAssessment.Manager\RiseAssessment.Manager.csproj", "{F32FD8D2-C32E-4F9E-A4B4-D235710FA697}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiseAssesment.API", "RiseAssesment.API\RiseAssesment.API.csproj", "{DAF27EFF-6621-4551-84B0-E4F0D424D06E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RiseAssesment.API", "RiseAssesment.API\RiseAssesment.API.csproj", "{DAF27EFF-6621-4551-84B0-E4F0D424D06E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{056B8DBB-1477-41AD-90B1-02E6F88D4704}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RiseAssessment.UI", "RiseAssessment.UI\RiseAssessment.UI.csproj", "{B4B97370-691A-4A3B-8224-807D9B4F7E14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiseAssessment.API.Client", "RiseAssessment.API.Client\RiseAssessment.API.Client.csproj", "{CA35F2BE-5DBD-4F61-8CCA-6778EBE7CA31}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +35,14 @@ Global
 		{DAF27EFF-6621-4551-84B0-E4F0D424D06E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DAF27EFF-6621-4551-84B0-E4F0D424D06E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DAF27EFF-6621-4551-84B0-E4F0D424D06E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4B97370-691A-4A3B-8224-807D9B4F7E14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4B97370-691A-4A3B-8224-807D9B4F7E14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4B97370-691A-4A3B-8224-807D9B4F7E14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4B97370-691A-4A3B-8224-807D9B4F7E14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA35F2BE-5DBD-4F61-8CCA-6778EBE7CA31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA35F2BE-5DBD-4F61-8CCA-6778EBE7CA31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA35F2BE-5DBD-4F61-8CCA-6778EBE7CA31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA35F2BE-5DBD-4F61-8CCA-6778EBE7CA31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,6 +51,8 @@ Global
 		{0EFFCA73-A70F-4791-B2F3-637C21E02305} = {731C5899-9FAA-4BF3-AFCE-CF15FFA1EC10}
 		{F32FD8D2-C32E-4F9E-A4B4-D235710FA697} = {731C5899-9FAA-4BF3-AFCE-CF15FFA1EC10}
 		{DAF27EFF-6621-4551-84B0-E4F0D424D06E} = {731C5899-9FAA-4BF3-AFCE-CF15FFA1EC10}
+		{B4B97370-691A-4A3B-8224-807D9B4F7E14} = {056B8DBB-1477-41AD-90B1-02E6F88D4704}
+		{CA35F2BE-5DBD-4F61-8CCA-6778EBE7CA31} = {056B8DBB-1477-41AD-90B1-02E6F88D4704}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8DFEB1B5-3E7E-4E86-B63F-8E56517FC571}
