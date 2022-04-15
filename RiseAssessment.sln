@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{731C5899-9FA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiseAssesment.Infrastructure", "RiseAssesment.Infrastructure\RiseAssesment.Infrastructure.csproj", "{0EFFCA73-A70F-4791-B2F3-637C21E02305}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiseAssessment.Manager", "RiseAssessment.Manager\RiseAssessment.Manager.csproj", "{F32FD8D2-C32E-4F9E-A4B4-D235710FA697}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +19,17 @@ Global
 		{0EFFCA73-A70F-4791-B2F3-637C21E02305}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EFFCA73-A70F-4791-B2F3-637C21E02305}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EFFCA73-A70F-4791-B2F3-637C21E02305}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F32FD8D2-C32E-4F9E-A4B4-D235710FA697}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F32FD8D2-C32E-4F9E-A4B4-D235710FA697}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F32FD8D2-C32E-4F9E-A4B4-D235710FA697}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F32FD8D2-C32E-4F9E-A4B4-D235710FA697}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{0EFFCA73-A70F-4791-B2F3-637C21E02305} = {731C5899-9FAA-4BF3-AFCE-CF15FFA1EC10}
+		{F32FD8D2-C32E-4F9E-A4B4-D235710FA697} = {731C5899-9FAA-4BF3-AFCE-CF15FFA1EC10}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8DFEB1B5-3E7E-4E86-B63F-8E56517FC571}
