@@ -13,7 +13,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace RiseAssesment.Infrastructure.CQRS.Handlers
+namespace RiseAssesment.Infrastructure.CQRS.Handlers.CommandHandlers
 {
     public class DirectoryCommandHandler :
         IRequestHandler<CreateDirectoryCommandRequest, CreateDirectoryCommandResponse?>,
