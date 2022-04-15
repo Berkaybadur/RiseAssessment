@@ -11,5 +11,6 @@ namespace RiseAssesment.Infrastructure.Models
         public string Email { get; set; }
         public string Location { get; set; }
         public string PhoneNumber { get; set; }
+        public string DirectoryId { get; set; }
     }
 }
