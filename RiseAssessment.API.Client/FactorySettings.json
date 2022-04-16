@@ -1,6 +1,4 @@
 {
-  "NewsAppApiHost": "http://localhost:44352/api/v1",
-  //"IdentityServerHost": "",
-
+  "RiseAssessmentApi": "https://localhost:44352/api/v1",
   "MvcHost": "#{CLIENT_URL}#"
 }

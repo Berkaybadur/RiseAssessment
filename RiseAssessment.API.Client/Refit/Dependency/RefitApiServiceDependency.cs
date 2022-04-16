@@ -70,17 +70,15 @@ namespace RiseAssessment.API.Client.Refit.Dependency
 
         private void ConfigureServices(IServiceCollection services)
         {
-            //services.AddTransient<AuthTokenHandler>();
             services.AddHttpContextAccessor();
             services.AddSingleton<AppSettings>();
 
+            //APP SETTINGS
+            var configBuilder = new ConfigurationBuilder().AddJsonFile("FactorySettings.json", optional: true);
+            var config = configBuilder.Build();
+            services.Configure<AppSettings>(config);
 
-            // APP SETTINGS
-            //var configBuilder = new ConfigurationBuilder().AddJsonFile("FactorySettings.json", optional: true);
-            //var config = configBuilder.Build();
-            //services.Configure<AppSettings>(config);
-
-            var baseaddress = new Uri("http://localhost:18200/api/v1");
+            var baseaddress = new Uri("https://localhost:44352/api/v1");
 
             services.AddRefitClient<IContactApi>()
             .ConfigureHttpClient(c =>
