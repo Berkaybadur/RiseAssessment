@@ -22,6 +22,8 @@ namespace RiseAssesment.Infrastructure.Models
         }
         public IMongoCollection<Directory> Directory => _mongoDatabase.GetCollection<Directory>(nameof(Directory));
         public IMongoCollection<Contact> Contact => _mongoDatabase.GetCollection<Contact>(nameof(Contact));
+        public IMongoCollection<Reports> Reports => _mongoDatabase.GetCollection<Reports>(nameof(Reports));
+
 
     }
 }

@@ -13,6 +13,7 @@ namespace RiseAssesment.Infrastructure.Models
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; }
+        public DateTime? CreateDate { get; set; }
 
     }
 }
