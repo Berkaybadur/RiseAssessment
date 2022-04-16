@@ -6,8 +6,7 @@ using System.Text;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 
-
-namespace RabbitMQ.Consumer
+namespace RiseAssesment.Consumer
 {
     class Program
     {
@@ -25,7 +24,7 @@ namespace RabbitMQ.Consumer
                     var message = Encoding.UTF8.GetString(body);
                     Console.WriteLine($" Welcome {message}");
                 };
-                channel.BasicConsume(queue: "contactQueue", //Kuyruk adı
+                channel.BasicConsume(queue: "ContactQueue", //Kuyruk adı
                     autoAck: true, //Kuyruk adı doğrulanması
                     consumer: consumer);
                 Console.ReadLine();

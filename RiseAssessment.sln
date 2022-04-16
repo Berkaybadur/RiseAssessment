@@ -31,7 +31,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{2EBAB97D-5FE9-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RiseAssessment.UI", "src\UI\RiseAssessment.UI.csproj", "{5F82283E-EAEA-4BA1-97F4-27679BF57B08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiseAssesment.Consumer", "RiseAssesment.Consumer\RiseAssesment.Consumer.csproj", "{122C4C16-3924-4353-A22E-3B23A12E3C42}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiseAssesment.Consumer", "src\RabbitMQConsumer\RiseAssesment.Consumer.csproj", "{122C4C16-3924-4353-A22E-3B23A12E3C42}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
