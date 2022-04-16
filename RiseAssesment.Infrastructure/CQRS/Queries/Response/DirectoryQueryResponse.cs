@@ -10,6 +10,6 @@ namespace RiseAssesment.Infrastructure.CQRS.Queries.Response
     {
         public string Company { get; set; }
         public string Name { get; set; }
-        public int Surname { get; set; }
+        public string Surname { get; set; }
     }
 }

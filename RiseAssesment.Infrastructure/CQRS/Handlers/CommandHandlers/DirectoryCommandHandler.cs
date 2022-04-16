@@ -33,7 +33,11 @@ namespace RiseAssesment.Infrastructure.CQRS.Handlers.CommandHandlers
         public async Task<CreateDirectoryCommandResponse> Handle(CreateDirectoryCommandRequest request, CancellationToken cancellationToken)
         {
             var directory = _mapper.Map<Directory>(request);
+            var isDirectoryExists = await _context.Directory.CountDocumentsAsync(x => x.Name == request.Name && x.Surname == request.Surname,
+            cancellationToken: cancellationToken) > 0;
 
+            if (isDirectoryExists)
+                return null;
             await _context.Directory.InsertOneAsync(directory, cancellationToken: cancellationToken);
             await _redisCache.Db0.RemoveAsync("directory");
 
