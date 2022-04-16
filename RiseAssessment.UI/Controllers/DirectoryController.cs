@@ -33,10 +33,5 @@ namespace RiseAssessment.UI.Controllers
                 return RedirectToAction("Error");
             }
         }
-        public IActionResult Add()
-        {
-            return View();
-        }
-
     }
 }
