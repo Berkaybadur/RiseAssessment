@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using RiseAssessment.API.Client;
 using RiseAssessment.API.Client.Refit.Dependency;
-using RiseAssessment.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,22 +9,22 @@ using System.Threading.Tasks;
 
 namespace RiseAssessment.UI.Controllers
 {
-    public class DirectoryController : Controller
+    public class ContactController : Controller
     {
         private readonly IMapper _mapper;
-        public DirectoryController(IMapper mapper)
+        public ContactController(IMapper mapper)
         {
             _mapper = mapper;
         }
         //Using only list view and Mapper
         public IActionResult Index()
         {
-            var response = RefitApiServiceDependency.DirectoryApi.List(new ListDirectoryQueryRequest
+            var response = RefitApiServiceDependency.ContactApi.List(new ListContactQueryRequest
             {
             });
             if (response.Exception == null)
             {
-                var result = _mapper.Map<List<ListDirectoryQueryResponseViewModel>>(response.Result);
+                var result = _mapper.Map<List<ListContactQueryResponseViewModel>>(response.Result);
                 return View(result);
             }
             else
@@ -33,10 +32,5 @@ namespace RiseAssessment.UI.Controllers
                 return RedirectToAction("Error");
             }
         }
-        public IActionResult Add()
-        {
-            return View();
-        }
-
     }
 }

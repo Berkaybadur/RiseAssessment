@@ -1,10 +1,9 @@
-﻿@model IEnumerable<ListDirectoryQueryResponseViewModel>
+﻿@model IEnumerable<ListContactQueryResponseViewModel>
 @{
-    ViewData["Title"] = "Directory";
+    ViewData["Title"] = "Contact";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
     <section class="content-header">
         <div class="container-fluid">
             <div class="row mb-2">
@@ -29,22 +28,22 @@
                             <table id="example2" class="table table-bordered table-hover">
                                 <thead>
                                     <tr>
-                                        <th>Id</th>
-                                        <th>Name</th>
-                                        <th>Surname</th>
-                                        <th>Company</th>
+                                        <th>Email</th>
+                                        <th>Location</th>
+                                        <th>PhoneNumber</th>
+                                        <th>DirectoryId</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     @foreach (var item in Model)
                                     {
-                                    <tr>
-                                        <td>@item.Id</td>
-                                        <td>@item.Name</td>
-                                        <td>@item.Surname</td>
-                                        <td>@item.Company</td>
+                                        <tr>
+                                            <td>@item.Email</td>
+                                            <td>@item.Location</td>
+                                            <td>@item.PhoneNumber</td>
+                                            <td>@item.DirectoryId</td>
 
-                                    </tr>
+                                        </tr>
                                     }
 
                                 </tbody>

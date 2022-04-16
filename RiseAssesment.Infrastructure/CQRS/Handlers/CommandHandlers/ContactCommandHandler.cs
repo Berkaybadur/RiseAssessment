@@ -33,7 +33,7 @@ namespace RiseAssesment.Infrastructure.CQRS.Handlers.CommandHandlers
         public async Task<CreateContactCommandResponse> Handle(CreateContactCommandRequest request, CancellationToken cancellationToken)
         {
             var contact = _mapper.Map<Contact>(request);
-            var isCategoryExists = await _context.Contact.CountDocumentsAsync(x => x.Email == request.Email,
+            var isCategoryExists = await _context.Contact.CountDocumentsAsync(x => x.DirectoryId == request.DirectoryId,
                 cancellationToken: cancellationToken) > 0;
 
             if (isCategoryExists)
