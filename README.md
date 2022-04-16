@@ -13,7 +13,6 @@ products:
 - Docker
 - Redis
 - Mongo
-- CQRS
 ---
 
 # ASP.NET Core API and ASP.NET Core MVC project
