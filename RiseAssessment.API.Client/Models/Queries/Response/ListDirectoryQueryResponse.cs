@@ -8,6 +8,7 @@ namespace RiseAssessment.API.Client
 {
     public class ListDirectoryQueryResponse
     {
+        public string Id { get; set; }
         public string Company { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }

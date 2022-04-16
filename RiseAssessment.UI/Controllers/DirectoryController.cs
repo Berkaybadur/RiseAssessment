@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using RiseAssessment.API.Client;
 using RiseAssessment.API.Client.Refit.Dependency;
+using RiseAssessment.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,7 +24,7 @@ namespace RiseAssessment.UI.Controllers
             });
             if (response.Exception == null)
             {
-                var result = response.Result;
+                var result = _mapper.Map<List<ListDirectoryQueryResponseViewModel>>(response.Result);
                 return View(result);
             }
             else
@@ -33,8 +34,8 @@ namespace RiseAssessment.UI.Controllers
         }
         public IActionResult Add()
         {
-
             return View();
         }
+
     }
 }
