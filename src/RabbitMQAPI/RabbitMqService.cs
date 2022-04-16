@@ -10,7 +10,7 @@ namespace NewsApp.RabbitMQ.Api
     {
         public void SendToQueue(Contact contact)
         {
-            var factory = new ConnectionFactory() { HostName = "localhost", UserName = "ProjeRabbit", Password = "TEST123" };//Konfigurasyondan alınabilir            
+            var factory = new ConnectionFactory() { HostName = "localhost", UserName = "ProjeRabbit", Password = "Berkay123" };//Konfigurasyondan alınabilir            
             using (IConnection connection = factory.CreateConnection())
             using (IModel channel = connection.CreateModel())
             {

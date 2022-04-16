@@ -26,14 +26,12 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RiseAssesment.RabbitMQ.Api", "src\RabbitMQAPI\RiseAssesment.RabbitMQ.Api.csproj", "{785135B7-E97F-4D97-A6A1-675257F750E5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RabbitMQConsumer", "RabbitMQConsumer", "{A6B83813-3524-4FF1-B122-DB1F7C71F2D6}"
-	ProjectSection(SolutionItems) = preProject
-		src\RabbitMQConsumer\Program.cs = src\RabbitMQConsumer\Program.cs
-		src\RabbitMQConsumer\RiseAssesment.RabbitMQ.Consumer.csproj = src\RabbitMQConsumer\RiseAssesment.RabbitMQ.Consumer.csproj
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{2EBAB97D-5FE9-478D-B5C0-2074D96D50F6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RiseAssessment.UI", "src\UI\RiseAssessment.UI.csproj", "{5F82283E-EAEA-4BA1-97F4-27679BF57B08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiseAssesment.Consumer", "RiseAssesment.Consumer\RiseAssesment.Consumer.csproj", "{122C4C16-3924-4353-A22E-3B23A12E3C42}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +71,10 @@ Global
 		{5F82283E-EAEA-4BA1-97F4-27679BF57B08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F82283E-EAEA-4BA1-97F4-27679BF57B08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F82283E-EAEA-4BA1-97F4-27679BF57B08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{122C4C16-3924-4353-A22E-3B23A12E3C42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{122C4C16-3924-4353-A22E-3B23A12E3C42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{122C4C16-3924-4353-A22E-3B23A12E3C42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{122C4C16-3924-4353-A22E-3B23A12E3C42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -91,6 +93,7 @@ Global
 		{A6B83813-3524-4FF1-B122-DB1F7C71F2D6} = {731C5899-9FAA-4BF3-AFCE-CF15FFA1EC10}
 		{2EBAB97D-5FE9-478D-B5C0-2074D96D50F6} = {731C5899-9FAA-4BF3-AFCE-CF15FFA1EC10}
 		{5F82283E-EAEA-4BA1-97F4-27679BF57B08} = {2EBAB97D-5FE9-478D-B5C0-2074D96D50F6}
+		{122C4C16-3924-4353-A22E-3B23A12E3C42} = {A6B83813-3524-4FF1-B122-DB1F7C71F2D6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8DFEB1B5-3E7E-4E86-B63F-8E56517FC571}
